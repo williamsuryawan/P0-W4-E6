@@ -19,8 +19,9 @@ function digitPerkalianMinimum(angka) {
     var count3 = count1+count2
     cage2.push(count3)
   }
-  var jawab = Math.min.apply(null, cage2)
-  return jawab
+  var cage3 = cage2.sort()  
+  var nilaiMin = cage3[0]
+  return nilaiMin
 }
 
 // TEST CASES
